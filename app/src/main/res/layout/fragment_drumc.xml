@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="omy.boston.bongos.MainActivity"
+    android:layout_centerHorizontal="true"
+    android:weightSum="1"
+    android:background="@drawable/bongo_drums">
+
+    <ImageView
+        android:id="@+id/left_bongoDrum"
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="91dp"
+        app:srcCompat="@drawable/transparent_square_tiles" />
+
+    <ImageView
+        android:id="@+id/right_bongoDrum"
+        android:layout_width="172dp"
+        android:layout_height="400dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/left_bongoDrum"
+        android:layout_toEndOf="@+id/left_bongoDrum"
+        app:srcCompat="@drawable/transparent_square_tiles" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="Evo ti Mile, bongosi pa se igraj malo ;) | by RenChe"
+        android:textColor="#DDDDDD"
+        android:textAlignment="center" />
+
+</RelativeLayout>
